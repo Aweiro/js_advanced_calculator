@@ -37,6 +37,9 @@ function makeCalculator() {
   };
 
   const divide = (number) => {
+    if (number === 0) {
+      return 'Enter correct number';
+    }
     newResult /= number;
 
     return createCalculator();
